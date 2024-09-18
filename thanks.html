@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("./anime-style-clouds.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+      /* span {
+        font-size: 4em;
+        color: white;
+
+        text-shadow: 2px 2px 5px black;
+        animation-timing-function: ease-in-out;
+      } */
+      .pulse-text {
+        font-size: 3em;
+        color: white;
+
+        text-shadow: 2px 2px 5px black;
+        animation: pulse 1.5s infinite; /* Adjust the timing as needed */
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.2); /* Scale up */
+          opacity: 0.8; /* Slightly fade out */
+        }
+        100% {
+          transform: scale(1); /* Scale back to original size */
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <span class="pulse-text">Thank You For Submitting Information</span>
+  </body>
+</html>
